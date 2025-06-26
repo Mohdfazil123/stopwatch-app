@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body class="flex flex-col items-center bg-gray-300">
+    <h1 class=" underline text-[4.2rem] font-sans font-bold mb-10 mt-20">STOPWATCH</h1>
+    <div id="container" class="flex flex-col items-center border-solid border-8 rounded-4xl bg-white p-[50px]">
+        <div id="display" class="text-[5rem] text-gray-900 font-mono font-bold text-shadow-gray-700">
+            00:00:00:00
+        </div>
+
+        <div id="controls">
+            <button id="startBtn" class="bg-green-400 hover:bg-green-700 text-2xl font-bold m-[5px] px-[20px] py-[20px] min-w-[150px] cursor-pointer border-none rounded-4xl text-white" onclick="start()">Start</button>
+            <button id="stopBtn" class="bg-red-400 hover:bg-red-700 text-2xl font-bold m-[5px] px-[20px] py-[20px]  min-w-[150px] cursor-pointer border-none rounded-4xl text-white" onclick="stop()">Stop</button>
+            <button id="resetBtn" class="bg-blue-400 hover:bg-blue-700 text-2xl font-bold m-[5px] px-[20px] py-[20px] min-w-[150px] cursor-pointer border-none rounded-4xl text-white" onclick="reset()">Reset</button>
+        </div>
+
+
+         
+    </div>
+    <script src="script.js "></script>
+</body>
+</html>
